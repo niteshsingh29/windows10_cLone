@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(./images/windows10_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.taskabr-icons .s{
+    font-size: large;
+}
+
+.input-bar{    
+    background: url(https://img.icons8.com/windows/23/000000/search--v1.png);
+    padding-left:35px; 
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-color: white;
+}
+
+.battery-image{
+    margin-right: 157px;
+    
+}
+
+.taskabr-icons .degree{
+    position: relative;
+    top: -7px;
+
+}
+
+.taskabr-icons-1:hover{
+    transform: scale(1.1);
+}
+
+.taskabr-icons:hover{
+    transform: scale(1.1);
+}
+
+
+.section-2 .start-button{
+    position: absolute;
+    height: 630px; 
+    width: 650px; 
+    bottom: -655px;
+    transition: all 0.1s ease-in;
+    display: none;
+}
+
+.section-2 .input-button{
+    position: absolute;
+    height: 620px; 
+    width: 770px; 
+    bottom: -655px;
+    /* left: 55px; */
+    /* bottom: 43px; */
+    transition: all 0.1s ease-in;
+    display: none;
+}
+
+.section-2 .File-button{
+    position: absolute;
+    height: 579px; 
+    width: 1037px; 
+    bottom: -655px;
+    /* left: 15rem; */
+    /* bottom: 90px; */
+    transition: all 0.7s ease-in;
+    display: none;
+}
+
+
+.context{
+    background-color: rgb(231, 230, 230);
+    width: 16%;
+    visibility: hidden;
+    position: absolute;
+    height: 26%;
+    
+    /* position: fixed; */
+    /* display: none */
+
+}
+.context .list-items{
+    list-style: none ;
+}
+.context .list-items li{
+    margin: 0px 0px;
+    padding: 2px 0px;
+    font-size: 13px;
+}
+
+
+.context .view-menu {
+    position: relative;
+}
+
+.view-menu:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+.view-menu1 li:hover{
+    background-color: rgb(245, 245, 245);
+    pointer-events: auto;
+}
+.personalize:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- taskbar section  -->
+    <section class="taskbar">
+
+        <!-- Taskbar  menu in which all the icons are placed  -->
+        <div class="taskbar-menu d-flex"
+            style="background-color: #d3dfe7; position: absolute; bottom: 0; width: 100%; height: 44px;">
+
+            <!-- windows 10 logo  -->
+            <div class="taskabr-icons-1 mx-3 my-2" onclick="startmenu()"><img
+                    src="https://img.icons8.com/ios-filled/22/000000/windows-10.png">
+            </div>
+
+            <!-- input search box  -->
+            <div class="taskabr-icons-2 mt-0 mb-0" onclick="inputmenu()">
+
+                <input type="text" name="search" value="Type here to search" class="input-bar py-2"
+                    style="width: 21.5rem; border: 0.1px solid rgb(199, 197, 197);">
+            </div>
+
+            <!-- windows-explorer  -->
+            <div class="taskabr-icons my-2 mx-2" onclick="fileMenu()"><img
+                    src="https://img.icons8.com/color/29/000000/windows-explorer.png" /></div>
+
+            <!-- amazon alexa  -->
+            <div class="taskabr-icons my-2 mx-2"><img
+                    src="https://img.icons8.com/color/29/000000/amazon-alexa-logo.png" /></div>
+
+            <!-- slack  -->
+            <div class="taskabr-icons my-2 mx-2"
+                style="background-color: rgb(255, 255, 255); border-radius: 50rem; width: 56px;"><img
+                    src="https://img.icons8.com/color/25/000000/slack-new.png"
+                    class="img-fluid px-0 py-0 mx-1 mt-1 my-0"></div>
+
+            <!-- visual studio code -->
+            <div class="taskabr-icons my-2 mx-2"><img
+                    src="https://img.icons8.com/fluency/29/000000/visual-studio-code-2019.png" /></div>
+
+            <!-- google chrome  -->
+            <div class="taskabr-icons my-2 mx-2"><img src="https://img.icons8.com/color/29/000000/chrome--v1.png" />
+            </div>
+
+            <!-- microsoft edge  -->
+            <div class="taskabr-icons my-2 mx-2"><img src="https://img.icons8.com/color/29/000000/ms-edge-new.png" />
+            </div>
+
+            <div class="d-flex justify-content-end" style="width: 100%;">
+
+                <!-- battery  -->
+                <div class="taskabr-icons-11 battery-image my-2"><img src="./images/battery.png" alt="h"
+                        class="img-fluid battery" style="height: 28px; width: 100%;"></div>
+
+                <!-- sun  -->
+                <div class="taskabr-icons-111 my-1"><img
+                        src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/25/000000/external-sun-space-vitaliy-gorbachev-flat-vitaly-gorbachev.png" />
+                </div>
+
+                <!-- weather  -->
+                <div class="taskabr-icons-22 my-2 mx-1 small" style="pointer-events: none;">27<span class="degree">
+                        <i class="far fa-circle" style="font-size: 5px;"></i>
+                    </span>C Sunny
+                </div>
+
+                <!-- arrow up  -->
+                <div class="taskabr-icons my-2 mx-1"><i class="fas fa-chevron-up fw-bolder"></i></div>
+
+                <!-- slack icon  -->
+                <div class="taskabr-icons my-2 mx-1"><i class="fab fa-slack text-decoration-line-through"></i>
+                </div>
+
+                <!-- battery icon  -->
+                <div class="taskabr-icons my-2 mx-1"><i class="fas fa-battery-half opacity-100"></i></div>
+
+                <!-- wifi icon  -->
+                <div class="taskabr-icons my-2 mx-1"><i class="fas fa-wifi" style="transform: rotate(-45deg);"></i>
+                </div>
+
+                <!-- volume  -->
+                <div class="taskabr-icons my-1 mx-1"><img
+                        src="https://img.icons8.com/ios/16/000000/high-volume--v1.png" /></div>
+
+                <!-- ENG -->
+                <div class="taskabr-icons-33 my-2 mx-1" style="font-size: 13px; pointer-events: none;"> ENG </div>
+
+                <!-- Time date  -->
+                <div class="taskabr-icons-44 my-1 mx-1" style="pointer-events: none;">
+                    <div class="d-flex flex-column">
+                        <time class="time text-center" style="font-size: 13px;">15:32</time>
+                        <time class="date" style="font-size: 13px;">04-02-2022</time>
+                    </div>
+                </div>
+
+                <!-- messsaging icon  -->
+                <div class="taskabr-icons my-2 mx-3"><img src="./images/message.png" class="mt-1"
+                        style="height: 28px; width: 100%;"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- section 2  -->
+
+    <div class="section-2">
+        <div class="start-button-1">
+            <img src="./images/start_button.png" alt="ss" class="img-fluid start-button">
+
+        </div>
+    </div>
+
+
+    <div class="section-2">
+        <div class="input-button-1">
+            <img src="./images/input.png" alt="ss" class="img-fluid input-button">
+
+        </div>
+    </div>
+
+    <div class="section-2">
+        <div class="input-button-1">
+            <img src="./images/file_manager.png" alt="ss" class="img-fluid File-button">
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- right click section   -->
+
+    <div class="context">
+        <ul class="list-items mt-1">
+
+
+            <li class="view-menu" onmouseenter="viewMenu()">
+                <div class="d-flex justify-content-between view-item">
+                    <span class="text">View</span>
+                    <i class="fas fa-chevron-right my-1 mx-3"></i>
+                </div>
+
+                <ul class="view-menu1"
+                    style="position: absolute; left: 96%; top: -4px; background-color: rgb(231, 230, 230); list-style: none; width: 100%; border-left: 2px solid rgb(158, 157, 157); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);  opacity: 0;">
+                    <li class="item">
+                        <span>Large Icons</span>
+                    </li>
+                    <li class="item"  style="list-style: circle;">
+                        <span>Medium Icons</span>
+                    </li>
+                    <li class="item" style="border-bottom: 1px solid grey ;">
+                        <span>Small Icons</span>
+                    </li>
+                    <li class="item">
+                        <span>Auto arrange Icons</span>
+                    </li>
+                    <li class="item d-flex" style="border-bottom: 1px solid grey;">
+                        <i class="fas fa-check mt-1" style="position: absolute; left: 7px;"></i>
+                        <span class="align">Align icons to grid</span>
+                    </li>
+                    <li class="item d-flex mb-2">
+                        <i class="fas fa-check mt-1" style="position: absolute; left: 7px;"></i>
+
+                        <span class="show">Show desktop icons</span>
+                    </li>
+
+                </ul>
+            </li>
+
+            <div class="d-flex justify-content-between personalize" onmouseenter="sortMenu()">
+
+                <li class="sort">Sort by</li>
+                <i class="fas fa-chevron-right my-1 mx-3" style="font-size: 12px;"></i>
+            </div>
+            <li class="personalize " style="border-top: 1px solid grey;">Refresh</li>
+
+
+
+            <li class="opacity-75">Paste</li>
+            <li class="opacity-75">Paste shortcut</li>
+            <div class="d-flex personalize"  onmouseenter="displayMenu()" style="border-bottom: 1px solid grey;">
+                <img class="img-fluid mt-1" style="position: absolute; left: 7px;"
+                    src="https://img.icons8.com/color/17/000000/visual-studio-2019.png" />
+                <li >Open with Visual Studio</li>
+            </div>
+
+            <li class="new-menu personalize" style="position: relative;" onmouseenter="newMenu()">
+                <div class="d-flex justify-content-between new-item" style="border-bottom: 1px solid grey;">
+                    <span class="text">New</span>
+                    <i class="fas fa-chevron-right my-1 mx-3"></i>
+                </div>
+
+                <img src="./images/icons-3.png" style="height: 257px; width: 100%; position: absolute; left: 96%; top: 4px; display: none;" alt="" class="img-fluid new-menu-img">
+
+
+
+
+            </li>
+            <div class="d-flex personalize" onmouseenter="displayMenu()">
+                <img class="img-fluid my-1" style="position: absolute; left: 7px;"
+                    src="https://img.icons8.com/nolan/17/laptop-settings.png" />
+                <li class="display">Display settings</li>
+            </div>
+
+            <div class="d-flex">
+                <img class="img-fluid my-1" style="position: absolute; left: 7px;"
+                    src="https://img.icons8.com/dusk/16/000000/monitor--v1.png" />
+                <li class="pb-2">Personalize</li>
+            </div>
+
+        </ul>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- linking javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
